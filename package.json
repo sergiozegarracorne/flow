@@ -1,0 +1,21 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "herramienta para diseñar flujo de trabajo en los procesos de una app de nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
+  }
+}

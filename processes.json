@@ -1,0 +1,16 @@
+{
+  "steps": [
+    { "id": "cotizacion", "next": ["venta"] },
+    { "id": "venta", "next": ["evaluacion"] },
+    { "id": "evaluacion", "next": ["credito", "contado"] },
+    { "id": "credito", "next": ["entrega", "pagos"] },
+    { "id": "contado", "next": ["entrega"] },
+    { "id": "entrega", "next": ["guia_remision", "nota_credito", "devolucion"] },
+    { "id": "pagos", "next": ["completado"] },
+    { "id": "guia_remision", "next": ["sunat"] },
+    { "id": "nota_credito", "next": ["sunat"] },
+    { "id": "devolucion", "next": ["sunat"] },
+    { "id": "sunat", "next": [] },
+    { "id": "completado", "next": [] }
+  ]
+}
